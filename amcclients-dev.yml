@@ -9,10 +9,7 @@ spring:
         auto-registration:
           register-management: on
   # configuration lien vers serveur Zipkin
-  management:
-    zipkin:
-      tracing:
-        endpoint: banque-zipkin:9411/api/v2/spans
+
   datasource:
     url: jdbc:mysql://banque-mysql:3306/banquebd?serverTimezone=UTC  # URL mysql
     username: root
@@ -35,7 +32,9 @@ management:
   tracing:
     sampling:
       probability: 1.0
-
+  zipkin:
+    tracing:
+      endpoint: banque-zipkin:9411/api/v2/spans
 # Configuration client de l'annuaire
 # Le serveur comptes va s'enregistrer comme un micro-service sur l'annuaire
 eureka:
