@@ -16,11 +16,6 @@ spring:
       service-registry:
         auto-registration:
           register-management: on
-  # configuration lien vers serveur Zipkin
-  management:
-    zipkin:
-      tracing:
-        endpoint: banque-zipkin:9411/api/v2/spans
 
 # Activation des endpoints pour le monitoring
 management:
@@ -34,7 +29,9 @@ management:
   tracing:
     sampling:
       probability: 1.0
-
+  zipkin:
+    tracing:
+      endpoint: http://banque-zipkin:9411/api/v2/spans
 # Configuration client de l'annuaire
 # Le serveur comptes va s'enregistrer comme un micro-service sur l'annuaire
 eureka:
