@@ -46,6 +46,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: https://dev-nj3gclnzfe2tmzvt.us.auth0.com/
+          jwk-set-uri: https://dev-nj3gclnzfe2tmzvt.us.auth0.com/.well-known/jwks.json
 
 # Activation des endpoints pour le monitoring
 management:
