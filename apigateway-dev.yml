@@ -5,6 +5,17 @@ spring:
   cloud:
     # Configuration de l'API Gateway
     gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedMethods:
+              - GET
+              - POST
+              - DELETE
+              - PUT
+              - PATCH
+              - OPTIONS
       discovery:
         locator:
           enabled: true #activation eureka locator
