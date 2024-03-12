@@ -41,6 +41,13 @@ spring:
       service-registry:
         auto-registration:
           register-management: on
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:10000/oauth2/jwks
+
 # Activation des endpoints pour le monitoring
 management:
   endpoints:
@@ -89,3 +96,5 @@ okta:
   oauth2:
     issuer: https://dev-nj3gclnzfe2tmzvt.us.auth0.com/
     audience: http://localhost:10000
+
+
