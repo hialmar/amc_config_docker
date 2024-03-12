@@ -33,6 +33,14 @@ spring:
           filters:
             # On va réécrire l'URL pour enlever le /api/client
             - RewritePath=/api/clients(?<segment>/?.*), /$\{segment}
+          metadata:
+            cors:
+              allowedOrigins: '*'
+              allowedMethods:
+                - GET
+                - POST
+              allowedHeaders: '*'
+              maxAge: 30
         #Service COMPTES-SERVICE
         - id: comptes-service
           uri: lb://amccomptes/
