@@ -7,10 +7,8 @@
     <list default="true" id="e79837c8-2207-4296-acf8-c2606e80f104" name="Changes" comment="changement de propriétés pour zipkin">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amccomposite-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/amccomposite-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amccomptes-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/amccomptes-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../amc_configserver" beforeDir="false" afterPath="$PROJECT_DIR$/../amc_configserver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
       <updated>1709825375774</updated>
       <workItem from="1709825376883" duration="50000" />
       <workItem from="1709826111145" duration="227000" />
-      <workItem from="1709827811621" duration="964000" />
+      <workItem from="1709827811621" duration="1585000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -98,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709828669361</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changement de propriétés pour zipkin">
+      <option name="closed" value="true" />
+      <created>1709828797487</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709828797487</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
