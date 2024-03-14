@@ -24,6 +24,13 @@ spring:
           # car le nom des services est en minuscule dans l'URL
       # Configuration des routes de l'API Gateway
       routes:
+        # Redirection de / vers /ui/ pour le front
+        - id: home
+          uri: http://localhost:10000/
+          predicates:
+            - Path=/
+          filters:
+            - RedirectTo=301,http://localhost:10000/ui/
         #Service CLIENTS-SERVICE
         - id: client-service
           uri: lb://amcclients/ #Attention : lb et pas HTTP. Lb est prêt pour faire du load-balancing
