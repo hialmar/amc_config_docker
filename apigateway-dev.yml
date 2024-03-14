@@ -57,12 +57,12 @@ spring:
             - RewritePath=/api/clientscomptes(?<segment>/?.*), /$\{segment}
         #Service Frontend Angular
         - id: amc_frontend
-          uri: http://bnkfront:4200
+          uri: http://bnkfront:4200/
           predicates:
-            # On matche tout ce qui commence par /api/clients
+            # On matche tout ce qui commence par /ui
             - Path=/ui/**
           filters:
-            # On va réécrire l'URL pour enlever le /api/client
+            # On va réécrire l'URL pour enlever le /ui
             - RewritePath=/ui/(?<segment>/?.*), /$\{segment}
           metadata:
             cors:
