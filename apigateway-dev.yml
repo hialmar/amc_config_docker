@@ -68,6 +68,8 @@ spring:
           predicates:
             # On matche tout ce qui commence par /ui
             - Path=/ui/**
+          filters:
+            - RewritePath=/ui/(?<segment>/?.*), /$\{segment}
           metadata:
             cors:
               allowedOrigins: '*'
