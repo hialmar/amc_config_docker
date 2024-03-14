@@ -121,8 +121,8 @@ eureka:
 logging:
   level:
     org.springframework.web: INFO # Choix du niveau de log affiché
-#    org.springframework.cloud.gateway: DEBUG # pour avoir plus d'infos sur le gateway
-#    reactor.netty.http.client: DEBUG # pour avoir plus d'infos sur les appels HTTP
+    org.springframework.cloud.gateway: DEBUG # pour avoir plus d'infos sur le gateway
+    reactor.netty.http.client: DEBUG # pour avoir plus d'infos sur les appels HTTP
 
 # Proprietes du serveur d'entreprise
 server:
