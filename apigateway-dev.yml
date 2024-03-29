@@ -77,6 +77,20 @@ spring:
                 - GET
               allowedHeaders: '*'
               maxAge: 30
+        - id: catchall
+          uri: http://bnkfront:4200/
+          predicates:
+            # On matche tout et on renvoie vers l'ui
+            - Path=/**
+          filters:
+            - RewritePath=/ui/(?<segment>/?.*), /$\{segment}
+          metadata:
+            cors:
+              allowedOrigins: '*'
+              allowedMethods:
+                - GET
+              allowedHeaders: '*'
+              maxAge: 30
       enabled: on # Activation gateway
     # Activation remontée management dans Eureka
     config:
