@@ -97,12 +97,6 @@ spring:
       service-registry:
         auto-registration:
           register-management: on
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: https://dev-nj3gclnzfe2tmzvt.us.auth0.com/
-          jwk-set-uri: https://dev-nj3gclnzfe2tmzvt.us.auth0.com/.well-known/jwks.json
 
 # Activation des endpoints pour le monitoring
 management:
@@ -148,9 +142,5 @@ logging:
 server:
   port: 10000   # HTTP (Tomcat) port
 
-okta:
-  oauth2:
-    issuer: https://dev-nj3gclnzfe2tmzvt.us.auth0.com/
-    audience: http://localhost:10000
 
 
